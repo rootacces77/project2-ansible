@@ -1,0 +1,26 @@
+- name: Install utils
+  ansible.builtin.dnf:
+    name: nfs-utils
+    state: present
+
+- name: Test if dir exists
+  ansible.builtin.stat:
+    path: "/home/{{container_user}}/nfs-dir"
+  register: dir_test
+
+- name: Create dir
+  ansible.builtin.file:
+    state: directory
+    path: "/home/{{container_user}}/nfs-dir"
+    owner: "{{container_user}}"
+    group: "{{container_user}}"
+    mode: '0755'   
+  when: not dir_test.stat.exists 
+
+- name: Mount NFS
+  ansible.builtin.mount:
+    fstype: nfs
+    src: '{{nfs_ip}}:/nfs-dir'
+    path: '/home/{{container_user}}/nfs-dir'
+    state: mounted
+    

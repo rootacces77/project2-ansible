@@ -1,0 +1,14 @@
+- name: Create nfs-dir
+  ansible.builtin.file:
+    path: /nfs-dir
+    state: directory
+    owner: root
+    group: container
+    mode: '0750'
+
+- name: Mount NFS
+  ansible.posix.mount:
+    src: "{{nfs_ip}}"
+    path: /nfs-dir
+    state: mounted
+    fstype: nfs
