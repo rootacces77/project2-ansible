@@ -20,7 +20,7 @@
 - name: Mount NFS
   ansible.builtin.mount:
     fstype: nfs
-    src: '{{nfs_ip}}:/nfs-dir'
+    src: '{{nfs_ip}}:/{{nfs_dir_name}}'
     path: '/home/{{container_user}}/nfs-dir'
     state: mounted
     

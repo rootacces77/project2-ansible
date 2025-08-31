@@ -16,4 +16,4 @@ sudo semanage user -m -R "staff_r" staff_u
 sudo semanage login -m -s staff_u {{container_user}}
 
 #List of selinux booleans
-setsebool -P container_connect_any off
+sudo setsebool -P container_connect_any off

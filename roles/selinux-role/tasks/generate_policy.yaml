@@ -6,13 +6,14 @@
 - name: Generate selinux.sh
   ansible.builtin.template:
     src: selinux.sh.j2
-    dest: /tmp/selinux.sh
-  delegate_to: localhost 
+    dest: /tmp/selinux.sh 
+    owner: root
+    group: root
 
 - name: Run selinux.sh
-  ansible.builtin.shell: bash
-  args:
-    stdin: "{{ lookup('file', '/tmp/selinux.sh') }}"
+  ansible.builtin.shell: bash /tmp/selinux.sh
+ # args:
+ #   stdin: /tmp/selinux.sh
   register: test
 
 - name: Debug
@@ -23,5 +24,4 @@
   ansible.builtin.file:
     path: /tmp/selinux.sh
     state: absent
-  delegate_to: localhost 
 

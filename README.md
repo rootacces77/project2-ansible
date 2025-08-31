@@ -1,7 +1,7 @@
 In this project I've tried to isolate and secure container as much as I can.
-Project creates custom container user with no shell ( /sbin/nologin ) and no sudo priviledges.
+Project creates custom container user with no shell ( /sbin/nologin ) and no sudo privileges.
 User is mapped to staff_u SeLinux user which has only one role staff_r ( system_r and other roles are removed ).
-Using udica I've created custom SeLinux label in which container is running.
+Using udica I've created custom SeLinux label which container is using.
 Container is running in non root enviroment using podman and starts automatically from user systemd file.
 Systemd file and Sysctl file have custom parametars which make it more secure and isolated.
 
@@ -29,13 +29,16 @@ Step 3.
 Run playbooks/main.yaml file using ansible-navigator
 
 
-
-When ansible finished you will only be able to login using user specified in playbooks/vars/main.yaml using key project2-key.
+When ansible finishes you will only be able to login using user specified in playbooks/vars/main.yaml using key project2-key.
 I've had some problems with podman_container module which didnt let me mount custom dirs to containers so I had to manually add line into systemd file.
 
 
 
-Things to do:
+![Alt text](images/ansible.png)
+
+![Alt text](images/server.png)
+
+
+
 Sysctl
-Youtube
 Seboolean

@@ -2,10 +2,12 @@ sshd_user: ansible
 sshd_public_key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIITcRRIbvsqEic860dA+E5aT3QRAJhS24G3+KEFgoVG8 project2-ansible
 sshd_port: 22
 
-#podman_username: ""
-#podman_password: ""
+podman_username: ""
+podman_password: ""
 
-nfs_ip: "172.16.0.2"
+nfs_ip: "192.168.100.101"
+#dir name of nfs server ( 192.168.100.101:/nfs-dir )
+nfs_dir_name: "nfs-dir"
 
 httpd_port: 8080
 
