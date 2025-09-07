@@ -40,5 +40,3 @@ I've had some problems with podman_container module which didnt let me mount cus
 
 
 
-Sysctl
-Seboolean

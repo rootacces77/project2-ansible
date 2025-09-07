@@ -1,0 +1,20 @@
+2025-09-07T12:07:51.744177+00:00 WARNING 'ansible_navigator.main' `config was normalized to SettingsEntryValue(default=<Constants.NOT_SET: 'Not set'>, current='/home/nikola/Desktop/project2-ansible/ansible.cfg', schema_default=<Constants.NOT_SET: 'Not set'>, source=<Constants.USER_CFG: 'Settings file'>).
+2025-09-07T12:07:51.788416+00:00 WARNING 'ansible_navigator.actions.run_c192._update_args' `config was normalized to SettingsEntryValue(default=<Constants.NOT_SET: 'Not set'>, current='/home/nikola/Desktop/project2-ansible/ansible.cfg', schema_default=<Constants.NOT_SET: 'Not set'>, source=<Constants.USER_CFG: 'Settings file'>).
+2025-09-07T12:09:07.767491+00:00 ERROR 'ansible_navigator.actions.run_c192.run' Can not step back while playbook in progress, :q! to exit
+2025-09-07T12:09:08.183226+00:00 ERROR 'ansible_navigator.actions.run_c192.run' Can not step back while playbook in progress, :q! to exit
+2025-09-07T12:09:08.567459+00:00 ERROR 'ansible_navigator.actions.run_c192.run' Can not step back while playbook in progress, :q! to exit
+2025-09-07T12:09:08.727201+00:00 ERROR 'ansible_navigator.actions.run_c192.run' Can not step back while playbook in progress, :q! to exit
+2025-09-07T12:09:08.887568+00:00 ERROR 'ansible_navigator.actions.run_c192.run' Can not step back while playbook in progress, :q! to exit
+2025-09-07T12:09:09.055183+00:00 ERROR 'ansible_navigator.actions.run_c192.run' Can not step back while playbook in progress, :q! to exit
+2025-09-07T12:09:09.183012+00:00 ERROR 'ansible_navigator.actions.run_c192.run' Can not step back while playbook in progress, :q! to exit
+2025-09-07T12:09:09.343516+00:00 ERROR 'ansible_navigator.actions.run_c192.run' Can not step back while playbook in progress, :q! to exit
+2025-09-07T12:09:09.470932+00:00 ERROR 'ansible_navigator.actions.run_c192.run' Can not step back while playbook in progress, :q! to exit
+2025-09-07T12:09:09.631109+00:00 ERROR 'ansible_navigator.actions.run_c192.run' Can not step back while playbook in progress, :q! to exit
+2025-09-07T12:09:09.791423+00:00 ERROR 'ansible_navigator.actions.run_c192.run' Can not step back while playbook in progress, :q! to exit
+2025-09-07T12:09:10.111339+00:00 ERROR 'ansible_navigator.actions.run_c192.run' Can not step back while playbook in progress, :q! to exit
+2025-09-07T12:09:10.266344+00:00 ERROR 'ansible_navigator.actions.run_c192.run' Can not step back while playbook in progress, :q! to exit
+2025-09-07T12:09:10.431148+00:00 ERROR 'ansible_navigator.actions.run_c192.run' Can not step back while playbook in progress, :q! to exit
+2025-09-07T12:09:10.687122+00:00 ERROR 'ansible_navigator.actions.run_c192.run' Can not step back while playbook in progress, :q! to exit
+2025-09-07T12:09:11.007016+00:00 ERROR 'ansible_navigator.actions.run_c192.run' Can not step back while playbook in progress, :q! to exit
+2025-09-07T12:09:14.259437+00:00 WARNING 'ansible_navigator.run' Dirty exit, killing the pid
+2025-09-07T12:15:05.141567+00:00 WARNING 'ansible_navigator.main' `config was normalized to SettingsEntryValue(default=<Constants.NOT_SET: 'Not set'>, current='/home/nikola/Desktop/project2-ansible/ansible.cfg', schema_default=<Constants.NOT_SET: 'Not set'>, source=<Constants.USER_CFG: 'Settings file'>).

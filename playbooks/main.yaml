@@ -1,4 +1,4 @@
-- name: Main fail
+- name: Main file
   become: true
   gather_facts: true
   hosts: all
